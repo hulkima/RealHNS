@@ -3,7 +3,7 @@ The source code is for the paper: [Exploring False Hard Negative Sample in Cross
 
 ## Overview
 This paper proposes a novel model-agnostic Real Hard Negative Sampling (RealHNS) framework specially for cross-domain recommendation (CDR), which aims to discover the false and refine the real from all HNS via both general and cross-domain real hard negative sample selectors. For the general part, we conduct the coarse- and fine-grained real HNS selectors sequentially, armed with a dynamic item-based FHNS filter to find high-quality HNS. For the cross-domain part, we further design a new cross-domain HNS for alleviating negative transfer in CDR and discover its corresponding FHNS via a dynamic user-based FHNS filter to keep its power.
-![_](./structure.pdf)
+![_](./structure.png)
 
 ## Dependencies
 - Python 3.8.10
