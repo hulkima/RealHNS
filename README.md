@@ -16,10 +16,27 @@ This paper proposes a novel model-agnostic Real Hard Negative Sampling (RealHNS)
 ## Implementation of RealHNS
 For the Game->Toy setting:
 ```
-CUDA_VISIBLE_DEVICES=0 python RealHNS.py --dataset=amazon_toy --lr 0.0005 --candidate_min_percentage_user 20 --candidate_max_percentage_user 30 --outlier_weight 0.1 --index 101
+CUDA_VISIBLE_DEVICES=0 python RealHNS.py --dataset=amazon_toy --candidate_min_percentage_user 20 --candidate_max_percentage_user 30 --outlier_weight 0.1 --index 101
 ```
 
 For the Toy->Game setting:
 ```
-CUDA_VISIBLE_DEVICES=2 python RealHNS.py --dataset=amazon_game --lr 0.0005 --candidate_min_percentage_user 10 --candidate_max_percentage_user 20 --outlier_weight 0.8 --index 101
+CUDA_VISIBLE_DEVICES=2 python RealHNS.py --dataset=amazon_game --candidate_min_percentage_user 10 --candidate_max_percentage_user 20 --outlier_weight 0.8 --index 101
 ```
+
+## BibTeX
+If you find this work useful for your research, please kindly cite RealHNS by:
+```
+@inproceedings{10.1145/3604915.3608791,
+author = {Ma, Haokai and Xie, Ruobing and Meng, Lei and Chen, Xin and Zhang, Xu and Lin, Leyu and Zhou, Jie},
+title = {Exploring False Hard Negative Sample in Cross-Domain Recommendation},
+year = {2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+doi = {10.1145/3604915.3608791},
+booktitle = {Proceedings of the 17th ACM Conference on Recommender Systems},
+location = {Singapore, Singapore},
+series = {RecSys '23}
+}
+```
+
