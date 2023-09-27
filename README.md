@@ -14,5 +14,12 @@ This paper proposes a novel model-agnostic Real Hard Negative Sampling (RealHNS)
 - Scipy==1.7.3
 
 ## Implementation of RealHNS
-Delayed by other submission tasks, we are currently organizing the dataset and code and will make it public within a week.
+For the Game->Toy setting:
+```
+CUDA_VISIBLE_DEVICES=0 python RealHNS.py --dataset=amazon_toy --lr 0.0005 --candidate_min_percentage_user 20 --candidate_max_percentage_user 30 --outlier_weight 0.1 --index 101
+```
 
+For the Toy->Game setting:
+```
+CUDA_VISIBLE_DEVICES=2 python RealHNS.py --dataset=amazon_game --lr 0.0005 --candidate_min_percentage_user 10 --candidate_max_percentage_user 20 --outlier_weight 0.8 --index 101
+```
